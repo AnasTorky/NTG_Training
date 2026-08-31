@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: Session1_Spring
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/SpringSessions
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update   # أو create أو create-drop
+    show-sql: true       # (اختياري) لعرض استعلامات SQL في الكونسول
+    properties:
+      hibernate:
+        format_sql: true
